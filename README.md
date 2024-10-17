@@ -4,7 +4,10 @@ This is a script that I made for a class project. This script is to view system 
 <hr></hr>
 <h2>Installation & Usage</h2>
 <hr></hr>
-git clone https://github.com/TheHellishPandaa/system-monitor.sh
+git clone https://github.com/TheHellishPandaa/system-monitor.git
+Then, 
+<hr></hr>
+cd system-monitor
 <hr></hr>
 Then, make the script executable.
 <hr></hr>
