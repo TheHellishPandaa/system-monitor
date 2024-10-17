@@ -5,6 +5,7 @@ This is a script that I made for a class project. This script is to view system 
 <h2>Installation & Usage</h2>
 <hr></hr>
 git clone https://github.com/TheHellishPandaa/system-monitor.git
+<hr></hr>
 Then, 
 <hr></hr>
 cd system-monitor
