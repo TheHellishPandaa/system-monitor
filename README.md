@@ -7,16 +7,18 @@ This is a script that I made for a class project. This script is to view system 
 git clone https://github.com/TheHellishPandaa/system-monitor.sh
 <hr></hr>
 Then, make the script executable.
+<hr></hr>
 chmod +x system-monitor.sh
-
+<hr></hr>
 Run the Script
 ./system-monitor.sh
-
+<hr></hr>
 Then, to automate this script you can edit the .bashrc file, and in the last line you put the path to the script. for example
-
+<hr></hr>
 nano .bashrc
 Then, in the last line you put the path to the script.
+<hr></hr>
 /route/to/script.sh
-
+<hr></hr>
 
 You can Modify, Download or Use this script ;)
