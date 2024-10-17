@@ -11,6 +11,7 @@ Then, make the script executable.
 chmod +x system-monitor.sh
 <hr></hr>
 Run the Script
+<hr></hr>
 ./system-monitor.sh
 <hr></hr>
 Then, to automate this script you can edit the .bashrc file, and in the last line you put the path to the script. for example
