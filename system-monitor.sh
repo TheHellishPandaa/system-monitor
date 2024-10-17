@@ -16,7 +16,7 @@ get_HOSTNAME() {
 }
 # Función para obtener el uso de CPU
 get_cpu_usage() {
-    echo "Uso de CPU:"
+    echo "CPU USAGE:"
     top -bn1 | grep "Cpu(s)" | \
     awk '{print "CPU en uso: " $2 + $4 "%"}'
 }
@@ -30,27 +30,26 @@ get_memory_usage() {
 
 # Función para obtener el uso del disco
 get_disk_usage() {
-    echo "Uso del disco:"
+    echo "Disk usage:"
     df -h / | grep / | awk '{print "Disco en uso: " $5 " (" $3 " usados de " $2 ")"}'
 }
-# Función para obtener el uso de la memoria swap
+# Function to get swap memory usage
 get_swap_usage() {
-    echo "Uso de Swap:"
+    echo "Swap Use:"
     free -m | grep Swap | awk '{printf "Swap usada: %.2fGB de %.2fGB\n", $3/1024, $2/1024}'
 }
-# Función para detectar la interfaz de red principal
 get_network_interface() {
-    # Intentar obtener la interfaz con la ruta por defecto
+        #Search the name of a network interface in use.
     interfaz=$(ip route | grep '^default' | awk '{print $5}')
-    # Si no se encuentra ninguna interfaz con ruta por defecto
+    # If not be search any interfaces
     if [[ -z "$interfaz" ]]; then
-        echo "No se pudo detectar una interfaz de red con ruta por defecto."
+        echo "A network interface could not be detected"
         return 1
     fi
- echo "Tu interfaz es: $interfaz"
+ echo "Your network iinteeerface is: $interfaz"
 }
 
-# Función para obtener la IP local
+# Function to obtain local IP
 get_local_ip() {
     echo "IP local:"
     hostname -I 
@@ -64,13 +63,13 @@ echo "Dirección MAC"
 
 }
 get_DEFAULT_GATEWAY() {
-        echo "Router por defecto"
+        echo "Default getewaay"
         ip route show default 
 }
 
 # Función para obtener la IP pública
 get_public_ip() {
-    echo "IP pública:"
+    echo "Públic IP:"
     # Consultamos a un servicio externo para obtener la IP pública
     PUBLIC_IP=$(curl -s ifconfig.me)
         #Ponemos -n al lado de la variable para comprobar que la variable tiene contenido.
@@ -95,3 +94,28 @@ get_INTERNET_CONNECTION() {
     fi
 }
 
+# show information of the system
+echo "-----------------------------------"
+echo 
+echo "The Hostname of the system is: $HOSTNAME"
+echo "-----------------------------------"
+get_cpu_usage
+echo "-----------------------------------"
+get_memory_usage
+echo "-----------------------------------"
+get_disk_usage
+echo "-----------------------------------"
+get_swap_usage
+echo "-----------------------------------"
+get_network_interface
+echo "-----------------------------------"
+get_local_ip
+echo "-----------------------------------"
+get_DIR_MAC
+echo "-----------------------------------"
+get_DEFAULT_GATEWAY
+echo "-----------------------------------"
+get_public_ip
+echo "-----------------------------------"
+get_COMPROBAR_INTERNET
+echo "-----------------------------------"
