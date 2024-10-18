@@ -1,6 +1,7 @@
 # system-monitor
 
-This is a script that I made for a class project. This script is to view system information, and network information, including CPU, memory, disk and network, along with checking internet connectivity.
+This is a script that I made for a class project. This script is to view system information, and network information, including CPU, memory, disk and network, along with checking internet connectivity. I do it useful because it analyzes the system, without the need to write so many commands.
+
 <hr></hr>
 <h2>Installation & Usage</h2>
 <hr></hr>
