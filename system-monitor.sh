@@ -92,7 +92,6 @@ get_INTERNET_CONNECTION() {
 }
 
 # Get system information
-get_HOSTNAME
 echo "-----------------------------------"
 echo "The Hostname of the system is: $HOSTNAME"
 echo "-----------------------------------"
