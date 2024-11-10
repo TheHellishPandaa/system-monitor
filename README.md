@@ -5,7 +5,9 @@ This is a script that I made for a class project. This script is to view system 
 <hr></hr>
 <h2>Installation & Usage</h2>
 <hr></hr>
+```bash
 git clone https://github.com/TheHellishPandaa/system-monitor.git
+```
 <hr></hr>
 Then, 
 <hr></hr>
