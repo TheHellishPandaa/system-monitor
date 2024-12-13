@@ -6,7 +6,6 @@ This is a script that I made for a class project. This script is to view system 
 
 ```
 git clone https://github.com/TheHellishPandaa/system-monitor.git
-```bash
 cd system-monitor
 ```
 Then, make the script executable.
